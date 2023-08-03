@@ -1,6 +1,6 @@
 .about-project {
     max-width: 1140px;
-    height: 608px;
+    height: 498px;
     margin: 110px auto 0;
 }
 
@@ -97,6 +97,33 @@
 
 @media screen and (max-width: 770px) {
     .about-project {
-      margin: 90px 50px 0;
+        padding: 90px 50px 0;
+        margin: 0;
     }
-  }
+
+    .about-project__descriptions {
+        gap: 22px;
+    }
+
+    .about-project__description-text {
+        font-size: 12px;
+        line-height: 18px;
+    }
+}
+
+@media screen and (max-width: 321px) {
+    .about-project__descriptions {
+        gap: 16px;
+        flex-direction: column;
+    }
+
+    .about-project__title {
+        font-size: 18px;
+        letter-spacing: -0.72px;
+    }
+
+    .about-project__description-text {
+        font-size: 11px;
+        line-height: 16px;
+    }
+}
