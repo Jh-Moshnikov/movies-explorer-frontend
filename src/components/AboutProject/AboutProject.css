@@ -112,6 +112,10 @@
 }
 
 @media screen and (max-width: 321px) {
+    .about-project {
+        margin-bottom: 70px;
+    }
+
     .about-project__descriptions {
         gap: 16px;
         flex-direction: column;

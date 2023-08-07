@@ -4,6 +4,7 @@
   justify-content: space-between;
   grid-template-columns: 62px 43% min-content;
   width: 100%;
+  z-index: 99;
 }
 
 .nav__default {
@@ -13,6 +14,7 @@
 .nav__route {
   font-weight: 500;
   font-size: 12px;
+  font-family: 'Inter', Arial, sans-serif;
   line-height: 16px;
   text-decoration: none;
   color: #000;
@@ -29,7 +31,9 @@
 
 .nav__route-btn {
   padding: 8px 20px;
-  background-color: #2be080;
+  background: #3456F3;
+  color: #FFF;
+  font-family: 'Inter', Arial, sans-serif;
   border-radius: 3px;
   transition: all 0.1s linear;
   margin-left: 30px;
@@ -150,7 +154,7 @@
 
   .nav__route-btn {
     padding: 7px 11px;
-    background-color: #2be080;
+    background: #3456F3;
     border-radius: 3px;
     transition: all 0.1s linear;
     margin-left: 14px;

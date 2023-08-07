@@ -1,11 +1,17 @@
 import { useState } from 'react';
+import { useLocation } from 'react-router-dom';
+
 import './MoviesCard.css';
 
 function MoviesCard(props) {
-    const [Save, setSave] = useState(false);
+    const [Like, setLike] = useState(false);
     const toggleClassSave = () => {
-        setSave(!Save);
+        setLike(!Like);
     };
+
+    let location = useLocation();
+    const isLikeButton = location.pathname === '/movies';
+    const isDeleteButton = location.pathname === '/saved-movies';
 
     function movieDuration(time) {
         const mins = time % 60;
@@ -19,10 +25,13 @@ function MoviesCard(props) {
             <div className="movie__disciption">
                 <div className="movie__info-box">
                     <p className="movie__name"> {props.film.nameRU} </p>
-                    {!props.save ? (
-                        <button className={`movie__button movie__button-save ${Save && "movie__button-save_active"}`}
-                            onClick={toggleClassSave} type="button"></button>
-                    ) : (
+                    {isLikeButton && (
+                        <button
+                            className={`movie__button movie__button-save ${Like && "movie__button-save_active"}`} onClick={toggleClassSave} type="button"
+                        ></button>
+                    )}
+
+                    {isDeleteButton && (
                         <button className="movie__button movie__button-del" type="button"></button>
                     )}
                 </div>
@@ -34,3 +43,13 @@ function MoviesCard(props) {
 }
 
 export default MoviesCard;
+
+/* {isLikeButton && (
+    <button
+    className={`movie__button movie__button-save ${Like && "movie__button-save_active"}`}
+  ></button>
+)}
+
+{isDeleteButton && (
+  <button className="movie__button movie__button-del" type="button"></button>
+)}  */

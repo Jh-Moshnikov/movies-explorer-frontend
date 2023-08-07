@@ -58,6 +58,12 @@
     height: 30px;
 }
 
+.movie__button-del {
+    background: url(../../images/delete-icon.png) no-repeat;
+    width: 30px;
+    height: 30px;
+}
+
 .movie__button-save_active {
     background: url(../../images/save_active.png) no-repeat;
     width: 30px;
@@ -76,3 +82,19 @@
 .movie__button:hover {
     opacity: 0.6;
 }
+
+@media screen and (max-width: 850px) {
+    .movie {
+      max-width: 339px;
+    }
+  }
+
+  @media screen and (max-width: 450px) {
+    .movie {
+      max-width: 300px;
+      max-height: 236px;
+    }
+    .movie__image {
+        height: 168px;
+    }
+  }

@@ -3,7 +3,6 @@ import Main from '../Main/Main';
 import Header from '../Header/Header';
 import Movies from '../Movies/Movies';
 import Footer from '../Footer/Footer';
-import SavedMovies from '../SavedMovies/SavedMovies';
 import Register from '../Register/Register';
 import Login from '../Login/Login';
 import Profile from '../Profile/Profile';
@@ -19,20 +18,22 @@ function App() {
 
   return (
     <div className="App">
-     {headerPaths.includes(location.pathname) ? (
+      {headerPaths.includes(location.pathname) ? (
         <Header isLoggedIn={isLoggedIn} />
       ) : (
         ''
       )}
-      <Routes>
-        <Route path="/" element={<Main />} />
-        <Route path="/signup" element={<Register />} />
-        <Route path="/signin" element={<Login />} />
-        <Route path="/movies" element={<Movies />} />
-        <Route path="/profile" element={<Profile />} />
-        <Route path="/saved-movies" element={<SavedMovies />} />
-        <Route path="*" element={<NotFound />} />
-      </Routes>
+      <main>
+        <Routes>
+          <Route path="/" element={<Main />} />
+          <Route path="/signup" element={<Register />} />
+          <Route path="/signin" element={<Login />} />
+          <Route path="/movies" element={<Movies />} />
+          <Route path="/profile" element={<Profile />} />
+          <Route path="/saved-movies" element={<Movies save={true} />} />
+          <Route path="*" element={<NotFound />} />
+        </Routes>
+      </main>
       {footerPaths.includes(location.pathname) ? <Footer /> : ''}
     </div>
   );

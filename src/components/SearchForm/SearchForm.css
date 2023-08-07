@@ -103,3 +103,29 @@
     /* 128.571% */
     padding-left: 14px;
 }
+
+@media screen and (max-width: 450px) {
+    .search__input::-webkit-input-placeholder {
+        font-size: 18px;
+        text-align: left;
+    }
+
+    .search__form {
+        height: 55px;
+        margin-bottom: 43px;
+    }
+
+    .search__input {
+        height: 22px;
+        margin-bottom: 15px;
+    }
+
+    .search {
+        padding-top: 60px;
+    }
+
+    .toggle__text {
+        font-size: 11px;
+    }
+    
+  }

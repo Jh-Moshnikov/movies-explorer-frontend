@@ -37,3 +37,22 @@
     line-height: normal;
     transition: opacity .2s;
 }
+
+@media screen and (max-width: 850px) {
+    .movies-list__films {
+        padding-bottom: 30px;
+        column-gap: 30px;
+        row-gap: 28px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .movies-list__films {
+        gap: 14px;
+        padding: 40px 0 26px;
+    }
+
+    .movies-list {
+        padding: 25px 10px 0;
+    }
+}

@@ -78,9 +78,29 @@
 
 .about-me__link:hover {
     opacity: 0.8;
-  }
+}
 
 .about-me__photo {
     width: 270px;
     height: 327px;
+}
+
+@media screen and (max-width: 770px) {
+    .about-me__photo {
+        width: 255px;
+        height: 307px;
+    }
+
+    .about-me__history {
+        font-size: 12px;
+        line-height: 18px;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .about-me__container {
+        flex-wrap: wrap-reverse;
+        justify-content: center;
+        gap: 40px;
+    }
 }

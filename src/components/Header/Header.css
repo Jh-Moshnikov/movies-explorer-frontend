@@ -1,10 +1,11 @@
 .header {
     padding: 0 70px;
-    margin-bottom: 23px;
+    padding-bottom: 23px;
     display: flex;
     align-items: center;
     justify-content: space-between;
     height: 76px;
+    background: #DDDEE3;
   }
   
   .header__logo {
@@ -13,8 +14,8 @@
   
   @media screen and (max-width: 768px) {
     .header {
-      padding: 0 30px;
-      margin-bottom: 18px;
+      padding: 0 30px 18px;
+     /* margin-bottom: 18px;*/
       display: grid;
       grid-template-columns: min-content min-content;
       align-content: center;
@@ -23,8 +24,8 @@
   
   @media screen and (max-width: 450px) {
     .header {
-      padding: 0 15px;
-      margin-bottom: 18px;
+      padding: 0 15px 18px;
+     /* margin-bottom: 18px; */
       display: grid;
       grid-template-columns: min-content min-content;
       align-content: center;

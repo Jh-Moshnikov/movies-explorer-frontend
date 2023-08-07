@@ -47,6 +47,7 @@
 }
 
 .form__label {
+    font-family: 'Inter', Arial, sans-serif;
     font-weight: 400;
     font-size: 10px;
     line-height: 12px;
@@ -61,7 +62,7 @@
     border: 0;
     color: #FFF;
     text-align: center;
-    font-family: Inter;
+    font-family: 'Inter', Arial, sans-serif;
     font-size: 14px;
     font-style: normal;
     font-weight: 500;
@@ -78,7 +79,7 @@
 .login-page__text {
     color: #A0A0A0;
     text-align: center;
-    font-family: Inter;
+    font-family: 'Inter', Arial, sans-serif;
     font-size: 14px;
     font-style: normal;
     font-weight: 400;
@@ -89,7 +90,7 @@
     color: #3456F3;
     text-decoration: none;
     text-align: center;
-    font-family: Inter;
+    font-family: 'Inter', Arial, sans-serif;
     font-size: 14px;
     font-style: normal;
     font-weight: 400;
@@ -106,6 +107,7 @@
 
 .form__input-error {
     font-weight: 400;
+    font-family: 'Inter', Arial, sans-serif;
     font-size: 10px;
     line-height: 12px;
     position: absolute;
@@ -116,6 +118,7 @@
 .form__api-error {
     font-weight: 400;
     font-size: 10px;
+    font-family: 'Inter', Arial, sans-serif;
     line-height: 12px;
     position: absolute;
     margin: -20px 0;

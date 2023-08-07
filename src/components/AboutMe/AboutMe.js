@@ -9,7 +9,7 @@ function AboutMe() {
             <div className="about-me__container">
                 <div className="about-me__content-box">
                     <h3 className="about-me__name">Евгений</h3>
-                    <p className="about-me__description">Фронтенд-разработчик, 36 года</p>
+                    <p className="about-me__description">Фронтенд-разработчик, 36 лет</p>
                     <p className="about-me__history">Я родился и живу в Саратове,
                         закончил факультет экономики СГУ. У меня есть жена и дочь.
                         Я люблю слушать музыку, а ещё увлекаюсь бегом. Недавно начал кодить.
