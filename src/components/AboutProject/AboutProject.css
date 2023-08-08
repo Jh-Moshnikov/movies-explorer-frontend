@@ -1,7 +1,9 @@
 .about-project {
-    max-width: 1140px;
+    max-width: 1280px;
     height: 498px;
-    margin: 110px auto 0;
+    padding: 110px 70px 0;
+    margin: 0 auto;
+    background: #FAFAFA;
 }
 
 .about-project__title {
@@ -115,7 +117,7 @@
     }
 }
 
-@media screen and (max-width: 321px) {
+@media screen and (max-width: 460px) {
     .about-project {
         width: 284px;
         margin: 0 auto 70px;

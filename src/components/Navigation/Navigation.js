@@ -1,6 +1,6 @@
 import './Navigation.css';
 import { useLocation, Link } from 'react-router-dom';
-import AccoutIcon from '../../images/account.png';
+import AccoutIcon from '../../images/account.svg';
 import useResize from '../../hooks/useResize';
 
 const Navigation = ({ isLoggedIn }) => {

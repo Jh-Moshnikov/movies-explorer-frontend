@@ -1,6 +1,6 @@
 import { useFormAndValidation } from '../../hooks/useFormAndValidation';
 import './Login.css';
-import Logo from '../../images/logo.png';
+import Logo from '../../images/logo.svg';
 import { Link } from 'react-router-dom';
 
 const Login = () => {

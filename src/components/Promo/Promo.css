@@ -1,7 +1,7 @@
 .promo {
-    border: 1px solid #000;
+    border: none;
     background: #DDDEE3;
-    background-image: url(../../images/practicum-logo.png);
+    background-image: url(../../images/practicum-logo.svg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: 320px 320px;
@@ -22,6 +22,7 @@
     /* 116% */
     letter-spacing: -2px;
 }
+
 
 @media screen and (max-width: 770px) {
 

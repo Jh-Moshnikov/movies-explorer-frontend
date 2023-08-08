@@ -1,7 +1,7 @@
 .navtab {
     display: flex;
     gap: 40px;
-    border: 1px solid #000;
+    border: none;
     /* padding-bottom: ;*/
     height: 66px;
     justify-content: center;

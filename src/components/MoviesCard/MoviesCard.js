@@ -43,13 +43,3 @@ function MoviesCard(props) {
 }
 
 export default MoviesCard;
-
-/* {isLikeButton && (
-    <button
-    className={`movie__button movie__button-save ${Like && "movie__button-save_active"}`}
-  ></button>
-)}
-
-{isDeleteButton && (
-  <button className="movie__button movie__button-del" type="button"></button>
-)}  */

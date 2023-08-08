@@ -1,7 +1,8 @@
 .about-me {
-    padding: 110px 50px 100px;
+    padding: 110px 70px 100px;
     max-width: 1140px;
     margin: 0 auto;
+    background: #FAFAFA;
 }
 
 .about-me__title {

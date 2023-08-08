@@ -29,15 +29,20 @@
 
 .drawer__burger-btn {
   all: unset;
-  background: url('../../images/icon-burger.png') no-repeat center;
+  background: url('../../images/icon-burger.svg') no-repeat center;
   height: 44px;
   width: 44px;
   cursor: pointer;
+  transition: opacity .2s;
+}
+
+.drawer__burger-btn:hover {
+  opacity: 0.8;
 }
 
 .drawer__close-btn {
   all: unset;
-  background: url('../../images/close.png') no-repeat center;
+  background: url('../../images/close.svg') no-repeat center;
   height: 44px;
   width: 44px;
   cursor: pointer;

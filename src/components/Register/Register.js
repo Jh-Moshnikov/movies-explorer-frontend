@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 /*import { useFormAndValidation } from '../../hooks/useFormAndValidation';*/
-import Logo from '../../images/logo.png';
+import Logo from '../../images/logo.svg';
 import './Register.css';
 
 function Register()  {

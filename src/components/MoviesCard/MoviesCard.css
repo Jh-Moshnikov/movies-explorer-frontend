@@ -53,19 +53,19 @@
 }
 
 .movie__button-save {
-    background: url(../../images/save.png) no-repeat;
+    background: url(../../images/save.svg) no-repeat;
     width: 30px;
     height: 30px;
 }
 
 .movie__button-del {
-    background: url(../../images/delete-icon.png) no-repeat;
+    background: url(../../images/delete-icon.svg) no-repeat;
     width: 30px;
     height: 30px;
 }
 
 .movie__button-save_active {
-    background: url(../../images/save_active.png) no-repeat;
+    background: url(../../images/save_active.svg) no-repeat;
     width: 30px;
     height: 30px;
 }
