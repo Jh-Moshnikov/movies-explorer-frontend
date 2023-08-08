@@ -23,7 +23,20 @@
     letter-spacing: -2px;
 }
 
-@media screen and (max-width: 719px) {
+@media screen and (max-width: 770px) {
+
+    .promo {
+        border: none;
+        height: 764px;
+        background-position: bottom 240px right 216px;
+    }
+
+    .promo__title {
+        padding-top: 304px;
+    }
+}
+
+@media screen and (max-width: 720px) {
     .promo__title {
         width: 300px;
         font-size: 31px;
@@ -32,6 +45,18 @@
         letter-spacing: -1.24px;
     }
     .promo {
+        background-position: center;
         background-size: 248px 248px;
+    }
+}
+ 
+@media screen and (max-width: 440px) {
+    .promo__title {
+        padding-top: 162px;
+    }
+    .promo {
+        padding-top: 40px;
+        height: 526px;
+        background-position: bottom 180px right 30px;
     }
 }

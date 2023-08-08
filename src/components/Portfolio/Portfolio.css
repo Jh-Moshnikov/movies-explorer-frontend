@@ -53,6 +53,37 @@
 
 .portfolio__project-link:hover {
     opacity: 0.8;
-  }
+}
 
 .portfolio__icon {}
+
+@media screen and (max-width: 770px) {
+    .portfolio {
+        padding-bottom: 90px;
+    }
+}
+
+@media screen and (max-width: 440px) {
+    .portfolio {
+        width: 292px;
+        padding: 0 0 72px;
+        margin-top: 67px;
+    }
+
+    .portfolio__title {
+        font-size: 14px;
+        padding-bottom: 42px;
+    }
+
+    .portfolio__project-link {
+        font-size: 18px;
+        line-height: 28px;
+        /* 155.556% */
+        letter-spacing: -0.72px;
+    }
+
+    .portfolio__icon {
+        width: 10px;
+        height: 10px;
+    }
+}

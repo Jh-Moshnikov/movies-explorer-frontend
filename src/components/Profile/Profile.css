@@ -26,12 +26,14 @@
   }
   
   .profile-form__label {
+    font-family: 'Inter', Arial, sans-serif;
     font-weight: 500;
     font-size: 11px;
     line-height: 13px;
   }
   
   .profile-form__input {
+    font-family: 'Inter', Arial, sans-serif;
     border: none;
     padding: 0;
     text-align: right;
@@ -42,6 +44,7 @@
   }
   
   .profile-form__input::placeholder {
+    font-family: 'Inter', Arial, sans-serif;
     font-weight: 500;
     font-size: 11px;
     line-height: 13px;

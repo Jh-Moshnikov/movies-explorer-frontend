@@ -97,7 +97,7 @@
 
 @media screen and (max-width: 770px) {
     .about-project {
-        padding: 90px 50px 0;
+        padding: 74px 50px 0;
         margin: 0;
     }
 
@@ -109,25 +109,55 @@
         font-size: 12px;
         line-height: 18px;
     }
+
+    .about-project__plan {
+        margin-top: 94px;
+    }
 }
 
 @media screen and (max-width: 321px) {
     .about-project {
-        margin-bottom: 70px;
+        width: 284px;
+        margin: 0 auto 70px;
+        padding: 56px 0 0;
     }
 
     .about-project__descriptions {
-        gap: 16px;
+        gap: 56px;
         flex-direction: column;
+        margin-top: 62px;
+    }
+
+    .about-project__description {
+        gap: 10px;
     }
 
     .about-project__title {
         font-size: 18px;
         letter-spacing: -0.72px;
+        margin-bottom: 29px;
     }
 
     .about-project__description-text {
         font-size: 11px;
         line-height: 16px;
+    }
+
+    .about-project__hr {
+        margin-bottom: 0;
+    }
+
+    .about-project__plan {
+        margin-top: 62px;
+        grid-template-columns: 35% 65%;
+    }
+
+    .about-project__time {
+        font-size: 11px;
+    }
+
+    .about-project__task {
+        font-size: 11px;
+        padding-top: 10px;
     }
 }

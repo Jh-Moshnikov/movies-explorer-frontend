@@ -1,14 +1,17 @@
 import './Header.css';
 import Navigation from '../Navigation/Navigation';
 import Logo from '../../images/logo.png';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import Menu from '../Menu/Menu';
 import useResize from '../../hooks/useResize.js';
 
 const Header = ({ isLoggedIn }) => {
+  let location = useLocation();
+  const headerPaths = location.pathname === '/';
+
   const size = useResize();
   return (
-    <header className="header">
+    <header className={`header ${headerPaths && "header__color"}`}>
       <Link className="header__route" to="/">
         <img className="header__logo" src={Logo} alt="Логотип" />
       </Link>

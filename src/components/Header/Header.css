@@ -5,6 +5,10 @@
     align-items: center;
     justify-content: space-between;
     height: 76px;
+   /*background: #DDDEE3;*/
+  }
+
+  .header__color {
     background: #DDDEE3;
   }
   
@@ -24,7 +28,7 @@
   
   @media screen and (max-width: 450px) {
     .header {
-      padding: 0 15px 18px;
+      padding: 0 15px 0;
      /* margin-bottom: 18px; */
       display: grid;
       grid-template-columns: min-content min-content;
