@@ -1,0 +1,131 @@
+.search {
+    padding-top: 70px;
+    padding-bottom: 10px;
+}
+
+.search__form {
+    position: relative;
+    width: 100%;
+    height: 72px;
+    border-bottom: 1.5px solid rgba(170, 170, 170, 0.2);
+    border-radius: 8px;
+    box-sizing: border-box;
+    padding: 25px 110px 25px 25px;
+    margin-bottom: 28px;
+}
+
+.search__input {
+    border: none;
+    border-radius: 8px;
+    width: 100%;
+    height: 34px;
+}
+
+.search__input::-webkit-input-placeholder {
+    font-family: 'Inter', Arial, sans-serif;
+    color: #A0A0A0;
+    text-align: center;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.search__button {
+    width: 80px;
+    height: 34px;
+    position: absolute;
+    top: 9px;
+    right: 9px;
+    border-radius: 48px;
+    background: #3456F3;
+    cursor: pointer;
+    border: none;
+    transition: opacity .2s;
+}
+
+.search__button:hover {
+    opacity: 0.8;
+}
+
+.toggle {
+    display: block;
+    margin: 0 auto 0;
+    width: 190px;
+}
+
+.toggle__checkbox {}
+
+.toggle__checkbox-input {
+    position: absolute;
+    visibility: hidden;
+}
+
+.toggle__checkbox-switch {
+    cursor: pointer;
+    display: inline-block;
+    background: #ebebeb;
+    border-radius: 20px;
+    width: 36px;
+    height: 20px;
+    position: relative;
+    vertical-align: middle;
+}
+
+.toggle__checkbox-switch:before {
+    content: "";
+    display: block;
+    background: #F5F5F5;
+    border-radius: 50%;
+    border: 1px solid #FFFFFF;
+    width: 14px;
+    height: 14px;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    transition: left 0.25s;
+}
+
+.toggle__checkbox-input:checked+.toggle__checkbox-switch:before {
+    left: 18px;
+    background: #2be080;
+}
+
+
+.toggle__text {
+    color: #000;
+    font-family: 'Inter', Arial, sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px;
+    /* 128.571% */
+    padding-left: 14px;
+}
+
+@media screen and (max-width: 450px) {
+    .search__input::-webkit-input-placeholder {
+        font-size: 18px;
+        text-align: left;
+    }
+
+    .search__form {
+        height: 55px;
+        margin-bottom: 43px;
+    }
+
+    .search__input {
+        height: 22px;
+        margin-bottom: 15px;
+    }
+
+    .search {
+        padding-top: 60px;
+    }
+
+    .toggle__text {
+        font-size: 11px;
+    }
+    
+  }
