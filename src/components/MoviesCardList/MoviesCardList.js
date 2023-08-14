@@ -1,19 +1,48 @@
+import { useEffect, useState, useMemo } from 'react';
 import './MoviesCardList.css';
 import MoviesCard from '../MoviesCard/MoviesCard';
-import { moviesData } from '../../utils/constants';
+import { useLocation } from 'react-router-dom';
+import useResize from '../../hooks/useResize.js';
 
-function MoviesCardList(props) {
+const MoviesCardList = ({ movies, savedMovies, onLikeMovie, onDeleteMovie }) => {
+    let size = useResize();
+    const [moviesToAdd, setMoviesToAdd] = useState(0);
+    const location = useLocation()
+
+    useEffect(() => {
+        setMoviesToAdd(0);
+    }, [movies]);
+
+    const moviesToRender = useMemo(() => {
+        const countToRender = size.width < 768 ? 5 : size.width < 1280 ? 8 : 12;
+
+        return movies.slice(0, countToRender + moviesToAdd);
+    }, [movies, moviesToAdd, size]);
+
+
     return (
         <section className="movies-list" aria-label="Киногалерея">
             <ul className="movies-list__films">
-                {moviesData.map((film) => (
+                {moviesToRender.map((movie) => (
                     <MoviesCard
-                        key={film.movieId}
-                        film={film}
-                        save={props.save} />
+                        key={movie.id || movie.movieId}
+                        movie={movie}
+                        savedMovies={savedMovies}
+                        onLikeMovie={onLikeMovie}
+                        onDeleteMovie={onDeleteMovie} />
                 ))}
             </ul>
-            <button className="movies-list__button-more" type="button">Ещё</button>
+            {location.pathname === '/movies' &&
+                movies.length > moviesToRender.length && (
+                    <button
+                        onClick={() => {
+                            setMoviesToAdd((prev) => prev + (size.width >= 1280 ? 3 : 2));
+                        }}
+                        className="movies-list__button-more"
+                    >
+                        Еще
+                    </button>
+                )}
         </section>
     );
 }

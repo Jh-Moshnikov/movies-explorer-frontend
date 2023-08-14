@@ -4,6 +4,7 @@ import Logo from '../../images/logo.svg';
 import { Link, useLocation } from 'react-router-dom';
 import Menu from '../Menu/Menu';
 import useResize from '../../hooks/useResize.js';
+import React from 'react';
 
 const Header = ({ isLoggedIn }) => {
   let location = useLocation();

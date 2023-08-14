@@ -1,158 +1,17 @@
-export const moviesData = [
-    {
-      "movieId": 1,
-      "nameRU": "«Роллинг Стоунз 1»",
-      "nameEN": "Stones",
-      "director": "Test",
-      "country": "США",
-      "year": "2010",
-      "duration": 61,
-      "description": "В конце 1960-х группа «Роллинг Стоунз», несмотря на все свои мегахиты и сверхуспешные концертные туры, была разорена.",
-      "trailerLink": "https://www.youtube.com/watch?v=D5fBhbEJxEU",
-      "image": "https://img.freepik.com/free-photo/top-view-cinema-equipment_23-2148470229.jpg?size=626&ext=jpg&ga=GA1.2.178143794.1691096484&semt=sph",
-      "thumbnail": "https://www.youtube.com"
-    },
-    {
-      "movieId": 2,
-      "nameRU": "«Роллинг Стоунз 2»",
-      "nameEN": "Stones",
-      "director": "Test",
-      "country": "США",
-      "year": "2010",
-      "duration": 121,
-      "description": "В конце 1960-х группа «Роллинг Стоунз», несмотря на все свои мегахиты и сверхуспешные концертные туры, была разорена.",
-      "trailerLink": "https://www.youtube.com/watch?v=D5fBhbEJxEU",
-      "image": "https://img.freepik.com/free-photo/top-view-cinema-equipment_23-2148470229.jpg?size=626&ext=jpg&ga=GA1.2.178143794.1691096484&semt=sph",
-      "thumbnail": "https://www.youtube.com"
-    },
-    {
-      "movieId": 3,
-      "nameRU": "«Роллинг Стоунз 3»",
-      "nameEN": "Stones",
-      "director": "Test",
-      "country": "США",
-      "year": "2010",
-      "duration": 80,
-      "description": "В конце 1960-х группа «Роллинг Стоунз», несмотря на все свои мегахиты и сверхуспешные концертные туры, была разорена.",
-      "trailerLink": "https://www.youtube.com/watch?v=D5fBhbEJxEU",
-      "image": "https://img.freepik.com/free-photo/top-view-cinema-equipment_23-2148470229.jpg?size=626&ext=jpg&ga=GA1.2.178143794.1691096484&semt=sph",
-      "thumbnail": "https://www.youtube.com"
-    },
-    {
-      "movieId": 4,
-      "nameRU": "«Роллинг Стоунз 4»",
-      "nameEN": "Stones",
-      "director": "Test",
-      "country": "США",
-      "year": "2010",
-      "duration": 56,
-      "description": "В конце 1960-х группа «Роллинг Стоунз», несмотря на все свои мегахиты и сверхуспешные концертные туры, была разорена.",
-      "trailerLink": "https://www.youtube.com/watch?v=D5fBhbEJxEU",
-      "image": "https://img.freepik.com/free-photo/top-view-cinema-equipment_23-2148470229.jpg?size=626&ext=jpg&ga=GA1.2.178143794.1691096484&semt=sph",
-      "thumbnail": "https://www.youtube.com"
-    },
-    {
-      "movieId": 5,
-      "nameRU": "«Роллинг Стоунз 5»",
-      "nameEN": "Stones",
-      "director": "Test",
-      "country": "США",
-      "year": "2010",
-      "duration": 123,
-      "description": "В конце 1960-х группа «Роллинг Стоунз», несмотря на все свои мегахиты и сверхуспешные концертные туры, была разорена.",
-      "trailerLink": "https://www.youtube.com/watch?v=D5fBhbEJxEU",
-      "image": "https://img.freepik.com/free-photo/top-view-cinema-equipment_23-2148470229.jpg?size=626&ext=jpg&ga=GA1.2.178143794.1691096484&semt=sph",
-      "thumbnail": "https://www.youtube.com"
-    },
-    {
-      "movieId": 6,
-      "nameRU": "«Роллинг Стоунз 6»",
-      "nameEN": "Stones",
-      "director": "Test",
-      "country": "США",
-      "year": "2010",
-      "duration": 78,
-      "description": "В конце 1960-х группа «Роллинг Стоунз», несмотря на все свои мегахиты и сверхуспешные концертные туры, была разорена.",
-      "trailerLink": "https://www.youtube.com/watch?v=D5fBhbEJxEU",
-      "image": "https://img.freepik.com/free-photo/top-view-cinema-equipment_23-2148470229.jpg?size=626&ext=jpg&ga=GA1.2.178143794.1691096484&semt=sph",
-      "thumbnail": "https://www.youtube.com"
-    },
-    {
-      "movieId": 7,
-      "nameRU": "«Роллинг Стоунз 1»",
-      "nameEN": "Stones",
-      "director": "Test",
-      "country": "США",
-      "year": "2010",
-      "duration": 111,
-      "description": "В конце 1960-х группа «Роллинг Стоунз», несмотря на все свои мегахиты и сверхуспешные концертные туры, была разорена.",
-      "trailerLink": "https://www.youtube.com/watch?v=D5fBhbEJxEU",
-      "image": "https://img.freepik.com/free-photo/top-view-cinema-equipment_23-2148470229.jpg?size=626&ext=jpg&ga=GA1.2.178143794.1691096484&semt=sph",
-      "thumbnail": "https://www.youtube.com"
-    },
-    {
-      "movieId": 8,
-      "nameRU": "«Роллинг Стоунз 2»",
-      "nameEN": "Stones",
-      "director": "Test",
-      "country": "США",
-      "year": "2010",
-      "duration": 156,
-      "description": "В конце 1960-х группа «Роллинг Стоунз», несмотря на все свои мегахиты и сверхуспешные концертные туры, была разорена.",
-      "trailerLink": "https://www.youtube.com/watch?v=D5fBhbEJxEU",
-      "image": "https://img.freepik.com/free-photo/top-view-cinema-equipment_23-2148470229.jpg?size=626&ext=jpg&ga=GA1.2.178143794.1691096484&semt=sph",
-      "thumbnail": "https://www.youtube.com"
-    },
-    {
-      "movieId": 9,
-      "nameRU": "«Роллинг Стоунз 3»",
-      "nameEN": "Stones",
-      "director": "Test",
-      "country": "США",
-      "year": "2010",
-      "duration": 39,
-      "description": "В конце 1960-х группа «Роллинг Стоунз», несмотря на все свои мегахиты и сверхуспешные концертные туры, была разорена.",
-      "trailerLink": "https://www.youtube.com/watch?v=D5fBhbEJxEU",
-      "image": "https://img.freepik.com/free-photo/top-view-cinema-equipment_23-2148470229.jpg?size=626&ext=jpg&ga=GA1.2.178143794.1691096484&semt=sph",
-      "thumbnail": "https://www.youtube.com"
-    },
-    {
-      "movieId": 10,
-      "nameRU": "«Роллинг Стоунз 4»",
-      "nameEN": "Stones",
-      "director": "Test",
-      "country": "США",
-      "year": "2010",
-      "duration": 141,
-      "description": "В конце 1960-х группа «Роллинг Стоунз», несмотря на все свои мегахиты и сверхуспешные концертные туры, была разорена.",
-      "trailerLink": "https://www.youtube.com/watch?v=D5fBhbEJxEU",
-      "image": "https://img.freepik.com/free-photo/top-view-cinema-equipment_23-2148470229.jpg?size=626&ext=jpg&ga=GA1.2.178143794.1691096484&semt=sph",
-      "thumbnail": "https://www.youtube.com"
-    },
-    {
-      "movieId": 11,
-      "nameRU": "«Роллинг Стоунз 5»",
-      "nameEN": "Stones",
-      "director": "Test",
-      "country": "США",
-      "year": "2010",
-      "duration": 145,
-      "description": "В конце 1960-х группа «Роллинг Стоунз», несмотря на все свои мегахиты и сверхуспешные концертные туры, была разорена.",
-      "trailerLink": "https://www.youtube.com/watch?v=D5fBhbEJxEU",
-      "image": "https://img.freepik.com/free-photo/top-view-cinema-equipment_23-2148470229.jpg?size=626&ext=jpg&ga=GA1.2.178143794.1691096484&semt=sph",
-      "thumbnail": "https://www.youtube.com"
-    },
-    {
-      "movieId": 12,
-      "nameRU": "«Роллинг Стоунз 6»",
-      "nameEN": "Stones",
-      "director": "Test",
-      "country": "США",
-      "year": "2010",
-      "duration": 98,
-      "description": "В конце 1960-х группа «Роллинг Стоунз», несмотря на все свои мегахиты и сверхуспешные концертные туры, была разорена.",
-      "trailerLink": "https://www.youtube.com/watch?v=D5fBhbEJxEU",
-      "image": "https://img.freepik.com/free-photo/top-view-cinema-equipment_23-2148470229.jpg?size=626&ext=jpg&ga=GA1.2.178143794.1691096484&semt=sph",
-      "thumbnail": "https://www.youtube.com"
-    }
-  ];
+/*export const MOVIES_URL = 'https://api.nomoreparties.co/beatfilm-movies';
+export const API_URL = 'https://api.moviesbook.nomoredomains.xyz';
+export const SHORT_MOVIE_DURATION = 40;
+export const MORE_MOVIES_WIDE_SCREEN = 4;
+export const MORE_MOVIES_TABLET_PC = 3;
+export const MORE_MOVIES_MOBILE = 2;
+export const ONE_MORE_MOVIES = 1;
+export const WIDE_SCREEN_WIDTH = 768;
+export const TABLET_PC_WIDTH = 480;
+export const MOBILE_WIDTH = 320;*/
+
+export const EMAIL_REGEX =
+    /^(([^<>()\\[\]\\.,;:\s@"]+(\.[^<>()\\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+
+//export const BEATFILM_URL = 'https://api.nomoreparties.co'; 
+
+export const BEATFILM_URL = 'https://api.nomoreparties.co';

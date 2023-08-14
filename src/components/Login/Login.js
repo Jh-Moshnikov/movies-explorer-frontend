@@ -2,12 +2,19 @@ import { useFormAndValidation } from '../../hooks/useFormAndValidation';
 import './Login.css';
 import Logo from '../../images/logo.svg';
 import { Link } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
+import { useEffect } from 'react';
+import { validateEmail } from '../../utils/Validation';
 
-const Login = () => {
+const Login = ({ onLogin, isLoggedIn, apiErrors }) => {
+  const navigate = useNavigate();
   const { values, handleChange, errors, isValid } = useFormAndValidation();
-  const onLogin = (val) => {
-    console.log(val);
-  };
+
+  useEffect(() => {
+    if (isLoggedIn) {
+      navigate('/movies');
+    }
+  }, [isLoggedIn]);
 
   return (
     <section className="login-page">
@@ -40,11 +47,8 @@ const Login = () => {
             required
           />
           <span
-            className={`form__input-error ${
-              isValid ? '' : 'form__input-error_active'
-            }`}
-          >
-            {errors.email}
+            className={`form__input-error  form__input-error_active`}>
+            {validateEmail(values.email).message}
           </span>
         </div>
 
@@ -65,15 +69,14 @@ const Login = () => {
             required
           />
           <span
-            className={`form__input-error ${
-              isValid ? '' : 'form__input-error_active'
-            }`}
+            className={`form__input-error ${isValid ? '' : 'form__input-error_active'
+              }`}
           >
             {errors.password}
           </span>
         </div>
 
-        <button type="submit" className="form__btn">
+        <button type="submit" className="form__btn" disabled={!isValid || validateEmail(values.email).invalid}>
           Войти
         </button>
 

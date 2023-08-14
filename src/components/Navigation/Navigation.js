@@ -2,6 +2,7 @@ import './Navigation.css';
 import { useLocation, Link } from 'react-router-dom';
 import AccoutIcon from '../../images/account.svg';
 import useResize from '../../hooks/useResize';
+import React from 'react';
 
 const Navigation = ({ isLoggedIn }) => {
   let location = useLocation();

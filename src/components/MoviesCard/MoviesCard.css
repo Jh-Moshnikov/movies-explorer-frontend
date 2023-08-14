@@ -7,6 +7,12 @@
     box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.08);
 }
 
+.movie__link {
+    display: block;
+    cursor: pointer;
+    font-size: 0;
+}
+
 .movie__image {
     width: 364px;
     height: 203px;
@@ -85,16 +91,17 @@
 
 @media screen and (max-width: 850px) {
     .movie {
-      max-width: 339px;
+        max-width: 339px;
     }
-  }
+}
 
-  @media screen and (max-width: 450px) {
+@media screen and (max-width: 450px) {
     .movie {
-      max-width: 300px;
-      max-height: 236px;
+        max-width: 300px;
+        max-height: 236px;
     }
+
     .movie__image {
         height: 168px;
     }
-  }
+}
