@@ -6,6 +6,7 @@ Cсылка на репозитарий
 
 Ссылки
 Ссылка на сгенерированный макет, архив на гугл диске: https://drive.google.com/file/d/1pdnxvPdn_Djkav8ArIktSMgRUG49zPhh/view?usp=sharing 
+Ссылув на Pull Request: https://github.com/Jh-Moshnikov/movies-explorer-frontend/pull/2
 
 Ссылки на проект
 Frontend: moviesbook.nomoredomains.xyz
