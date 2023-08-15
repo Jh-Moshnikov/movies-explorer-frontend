@@ -6,6 +6,11 @@ Cсылка на репозитарий
 
 Ссылки
 Ссылка на сгенерированный макет, архив на гугл диске: https://drive.google.com/file/d/1pdnxvPdn_Djkav8ArIktSMgRUG49zPhh/view?usp=sharing 
+
+Ссылки на проект
+Frontend: moviesbook.nomoredomains.xyz
+Backend: api.moviesbook.nomoredomains.xyz
+
 Используемые технологии
 HTML CSS JS React Адаптивная верстка проекта по макету из «Фигмы» flex media-запросы Все классы названы по БЭМ
 
