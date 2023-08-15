@@ -85,17 +85,33 @@ const Profile = ({ onSignOut, onUpdateUser, apiErrors, isOK }) => {
           </span>
         </div>
 
-        <button
-          type="button"
-          className="profile-form__button profile-form__button-edit"
-          onClick={(e) => {
-            e.preventDefault();
-            setShowSaveBtn(true);
-            setShowSuccessMsg(false);
-          }}
-        >
-          Редактировать
-        </button>
+        {showSaveBtn ? (
+            <button
+              type="submit"
+              className="profile-form__button profile-form__button-edit"
+              disabled={
+                !isValid ||
+                (values.name === currentUser.name &&
+                  values.email === currentUser.email) ||
+                validateEmail(values.email).invalid ||
+                validateName(values.name).invalid
+              }
+            >
+              Сохранить
+            </button>
+          ) : (
+            <button
+              type="button"
+              className="profile-form__button profile-form__button-edit"
+              onClick={(e) => {
+                e.preventDefault();
+                setShowSaveBtn(true);
+                setShowSuccessMsg(false);
+              }}
+            >
+              Редактировать
+            </button>
+          )}
         <button
           onClick={onSignOut}
           className="profile-form__button profile-form__button-signout"
